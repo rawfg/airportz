@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "b90221a7-5d5d-4d69-8a11-b2c3cbe62125",
+		"name": "airports-service",
+		"description": "Airports service test suite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-by-id-2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airports/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airports",
+						"2"
+					]
+				},
+				"description": "gets by AirportID = 2"
+			},
+			"response": []
+		},
+		{
+			"name": "get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airports",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airports"
+					]
+				},
+				"description": "gets all airports"
+			},
+			"response": []
+		},
+		{
+			"name": "get-by-country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airports/by/country",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airports",
+						"by",
+						"country"
+					]
+				},
+				"description": "mapped by country"
+			},
+			"response": []
+		},
+		{
+			"name": "get-by-country-with-freetext-search-poland",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airports/by/country/Poland",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airports",
+						"by",
+						"country",
+						"Poland"
+					]
+				},
+				"description": "get by country using the key freetext search (in this case Poland)"
+			},
+			"response": []
+		}
+	]
+}
